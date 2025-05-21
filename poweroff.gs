@@ -9,7 +9,3 @@ function postNatureRemo(id, access_token, operation_off){
   }
   UrlFetchApp.fetch(url, options);
 }
-
-function nature_remo() {
-  postNatureRemo(id_light.light, 'power-off');
-}

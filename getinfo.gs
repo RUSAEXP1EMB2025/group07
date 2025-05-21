@@ -7,6 +7,10 @@ function getInfo(info) {
   }
 
   let last_row = sheet.getLastRow();  //最終行を取得
+  if (info == 2 || info == 3) {
+    last_row--
+  }
+
   const value = sheet.getRange(last_row, info).getValue();
   console.log(value);
   return value;
